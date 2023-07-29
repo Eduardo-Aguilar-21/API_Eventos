@@ -16,7 +16,7 @@ public class ApiApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ApiApplication.class, args);
 	}
-
+/*
 	@Autowired
 	PasswordEncoder passwordEncoder;
 
@@ -33,7 +33,7 @@ public class ApiApplication {
 					.nombre("Eduardo")
 					.apellido("Aguilar")
 					.estado(true)
-					.username("edas")
+					.username("edas12")
 					.password(passwordEncoder.encode("1234"))
 					.rolesModel(rol)
 					.build();
@@ -41,5 +41,5 @@ public class ApiApplication {
 			usuariosRepository.save(usuariosModel);
 
 		};
-	}
+	}*/
 }
