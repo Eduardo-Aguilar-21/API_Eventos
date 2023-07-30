@@ -79,7 +79,9 @@ public class WebSecurityConfig {
                 .authorizeHttpRequests(auth -> {
                     auth.requestMatchers("/hola").permitAll();
                     auth.requestMatchers("/login").permitAll();
-                    auth.requestMatchers("/api/categoria/**").permitAll();
+                    auth.requestMatchers("/api/categorias/**").permitAll();
+                    auth.requestMatchers("/api/eventos/**").permitAll();
+                    auth.requestMatchers("/api/ec/**").permitAll();
                     auth.requestMatchers("/swagger-ui/**").permitAll();
                     auth.requestMatchers("/doc/**").permitAll();
                     auth.requestMatchers("/swagger-ui.html").permitAll();
